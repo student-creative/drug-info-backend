@@ -4,7 +4,7 @@ var router = express.Router();
 var drugs = require('../controllers/drugController');
 
 router.post("/insert", drugs.insertMany);      // one time
-router.get("/", drugs.getDrugs);               // table data
+router.get("/api/drugs", drugs.getDrugs);               // table data
 router.get("/api/drugs/companies", drugs.getCompanies);  // dropdown
 
 
